@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script type="module" src="./js/main.js"></script> -->
+</head>
+<body>
+  <button class="button" data-section="datecalc">Калькулятор дат</button>
+  <button class="button" data-section="timer">Таймер</button>
+  <form id="datecalc" class="section">
+    <h3>Калькулятор дат</h3>
+    <label>
+        <strong>Первая дата:</strong>
+        <input type="date" name="firstDate" />
+    </label>
+    <label>
+        <strong>Вторая дата:</strong>
+        <input type="date" name="secondDate" />
+    </label>
+    <button type="submit">Расчитать промежуток</button>
+    <p id="datecalc__result"></p>
+  </form> 
+  <div id="timer" class="section" style="display: none;">
+    <h3>Таймер</h3>
+    <label for="time-input">Введите время в секундах:</label>
+    <input type="number" id="time-input">
+    <button id="start-btn">Старт</button>
+    <button id="stop-btn" disabled>Стоп</button>
+    <div>
+      <h2>Оставшееся время: <span id="timerCount">00:00</span></h2>
+    </div> 
+  </div>
+</body>
+</html>
+
+<!-- import { DateTime } from 'https://moment.github.io/luxon/es6/luxon.min.js'; -->

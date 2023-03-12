@@ -1,6 +1,7 @@
 import { printError, printREsult } from "./printResult.js";
 import getDateDiff from "./getDateDiff.js";
 import setSection from "./setSection.js";
+import { startTimer, stopTimer } from "./calcHandler.js";
 
 const form = document.getElementById("datecalc");
 
@@ -26,3 +27,8 @@ const buttons = document.querySelectorAll(".button");
     setSection(button.dataset.section, "section");
   });
 });
+
+const startBtn = document.getElementById("start-btn");
+const stopBtn = document.getElementById("stop-btn");
+startBtn.addEventListener("click", startTimer);
+stopBtn.addEventListener("click", stopTimer);

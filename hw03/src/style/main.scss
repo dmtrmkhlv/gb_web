@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: red;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__card{
+        border: 1px solid gold;
+        max-width: 30%;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: inset 9em -3em gold;
+        &_img{
+        max-height: 200px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "hw03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --hot --open",
+    "build": "npx webpack --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmtrmkhlv/gb_web.git"
+  },
+  "author": "Dmitry Mikhailov",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.6.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "sass": "^1.49.7",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "bugs": {
+    "url": "https://github.com/dmtrmkhlv/gb_web/issues"
+  },
+  "homepage": "https://github.com/dmtrmkhlv/gb_web#readme",
+  "dependencies": {
+    "url-loader": "^4.1.1"
+  }
+}

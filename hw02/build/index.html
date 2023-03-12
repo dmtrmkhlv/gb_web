@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="./js/main.js"></script>
-</head>
+  <!-- <script type="module" src="./js/main.js"></script> -->
+<script defer src="main.b4c6120976f49989a4c6.js"></script></head>
 <body>
   <button class="button" data-section="datecalc">Калькулятор дат</button>
   <button class="button" data-section="timer">Таймер</button>
@@ -30,10 +30,10 @@
     <input type="number" id="time-input">
     <button id="start-btn">Старт</button>
     <button id="stop-btn" disabled>Стоп</button>
+    <div>
+      <h2>Оставшееся время: <span id="timerCount">00:00</span></h2>
+    </div> 
   </div>
-  <div>
-    <h2>Оставшееся время: <span id="timerCount">00:00</span></h2>
-  </div> 
 </body>
 </html>
 

@@ -17,9 +17,14 @@ module.exports = {
         test: /\.(png|jpeg|jpg|gif)$/i,
         use: [
           {
-            loader: "file-loader",
+            loader: "img-optimize-loader",
             options: {
-              limit: 8192,
+              compress: {
+                mode: "high",
+                webp: true,
+                gifsicle: true,
+                disableOnDevelopment: false,
+              },
             },
           },
         ],

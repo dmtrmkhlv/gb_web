@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: red;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        border: 5px solid gold;
+        background-color: #f0f3f4;
+        max-width: 30%;
+        min-height: 300px;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: inset 0em -3em gold;
+        margin-bottom: 20px;
+
+        &_title {
+            align-self: end;
+        }
+
+        &_image {
+            max-height: 200px;
+            min-width: 100%;
+            object-fit: contain;
+        }
+
+        &_audio {
+            align-self: self-end;
+            min-width: 100%;
+        }
+
+        &_video {
+            max-height: 200px;
+            min-width: 100%;
+        }
+    }
+}

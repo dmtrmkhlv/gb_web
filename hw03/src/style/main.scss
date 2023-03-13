@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 h1{
@@ -13,13 +14,28 @@ h1{
     justify-content: space-between;
 
     &__card{
-        border: 1px solid gold;
-        max-width: 30%;
-        padding: 10px;
-        box-sizing: border-box;
-        box-shadow: inset 9em -3em gold;
-        &_img{
+        display: flex;
+    flex-wrap: wrap;
+    border: 5px solid gold;
+    background-color: #f0f3f4;
+    max-width: 30%;
+    min-height: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: inset 0em -3em gold;
+    margin-bottom: 20px;
+
+        &_title{
+            align-self: end;
+        }
+
+        &_image{
         max-height: 200px;
+        max-width: 100%;
+        }
+
+        &_audio{
+            align-self: self-end;
         }
     }
 }

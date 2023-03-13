@@ -2,10 +2,16 @@ import image1 from "../../media/image/1.jpg";
 import image2 from "../../media/image/2.jpg";
 import image3 from "../../media/image/3.jpg";
 import image4 from "../../media/image/4.gif";
+import audio1 from "../../media/audio/1.mp3";
+import audio2 from "../../media/audio/2.mp3";
+import audio3 from "../../media/audio/3.mp3";
 
 export default [
-  { title: "Заголовок", url: image1 },
-  { title: "Заголовок", url: image2 },
-  { title: "Заголовок", url: image3 },
-  { title: "Заголовок", url: image4 },
+  { title: "image1", type: "image", url: image1 },
+  { title: "image2", type: "image", url: image2 },
+  { title: "image3", type: "image", url: image3 },
+  { title: "image4", type: "image", url: image4 },
+  { title: "audio1", type: "audio", url: audio1 },
+  { title: "audio2", type: "audio", url: audio2 },
+  { title: "audio3", type: "audio", url: audio3 },
 ];

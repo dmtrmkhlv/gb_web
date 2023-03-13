@@ -1,4 +1,4 @@
-import { imageLoader } from "./imageLoader";
+import { dataLoader } from "./dataLoader";
 
 const gallery = document.getElementById("gallery");
-gallery.innerHTML = imageLoader();
+gallery.innerHTML = dataLoader();

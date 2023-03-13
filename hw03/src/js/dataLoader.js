@@ -23,6 +23,15 @@ export const dataLoader = () => {
           <h2 class="gallery__card_title">${item.title}</h2>
           </div>`;
         break;
+
+      case "video":
+        cards += `<div class="gallery__card">
+            <video src="${item.url}" class="gallery__card_video" controls autoplay poster="">
+              Ваш браузер не поддерживает HTML5 видео. Вот взамен <a href="${item.url}">ссылка на видео</a>
+            </video>
+            <h2 class="gallery__card_title">${item.title}</h2>
+            </div>`;
+        break;
     }
   });
   return cards;

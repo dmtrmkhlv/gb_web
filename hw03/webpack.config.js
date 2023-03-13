@@ -31,7 +31,7 @@ module.exports = {
         // use: ["file-loader", "url-loader"],
       },
       {
-        test: /\.(mp3)$/i,
+        test: /\.(mp[3|4])$/i,
         use: ["file-loader"],
       },
       {
